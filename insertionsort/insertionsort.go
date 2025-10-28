@@ -3,7 +3,7 @@ package insertionsort
 // MoveLeft bewegt das Element an Stelle i so lange nach links,
 // bis es an der richtigen Stelle im bereits sortierten Teil der Liste ist.
 func MoveLeft(arr []int, i int) {
-	for i := 0; i < len(arr); i++ {
+	for i := 1; i < len(arr); i++ {
 		key := arr[i]
 		j := i - 1
 
