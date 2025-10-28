@@ -10,7 +10,7 @@ func MoveLeft(arr []int, i int) {
 		// Verschiebe Elemente, die größer als key sind, um eine Position nach rechts
 		for j >= 0 && arr[j] > key {
 			arr[j+1] = arr[j]
-
+			j--
 		}
 		arr[j+1] = key
 	}
